@@ -36,8 +36,8 @@ class Patients:
         # 
         self.trie = trie
     
-    # create a sugestion object filter for patients, parsing the query argument
-    def sugestions(self, query):
+    # create a suggestion object filter for patients, parsing the query argument
+    def suggestions(self, query):
         """
         """
 
@@ -47,7 +47,7 @@ class Patients:
 
 # 
 @api_view(['GET'])
-def patient_sugestios(request, query):
+def patient_suggestios(request, query):
     """
     
     """
@@ -61,8 +61,8 @@ def patient_sugestios(request, query):
         # create a trie object for csv file
         patients = Patients(csv_file)
 
-        # get sugestions for patients based on query
-        sugestions = patients.sugestions(query)
+        # get suggestions for patients based on query
+        suggestions = patients.suggestions(query)
 
-        # return filtered sugesttions
-        return Response(sugestions)
+        # return filtered suggesttions
+        return Response(suggestions)

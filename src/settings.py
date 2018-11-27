@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-patient_csv = f'{BASE_DIR}/patients.csv'
+patient_csv = f'{BASE_DIR}/assets/patients.csv'
 PATIENTS = patient_csv if os.path.isfile(patient_csv) else None
 if PATIENTS is None:
     raise ValueError('The csv file for patients could not be found')

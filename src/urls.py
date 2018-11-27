@@ -19,5 +19,5 @@ from rest_framework import routers
 from api import views
 
 urlpatterns = [
-    path('autocomplete/<str:query>', views.patient_sugestios, name='autocomplete'),
+    path('autocomplete/<str:query>', views.patient_suggestios, name='autocomplete'),
 ]
