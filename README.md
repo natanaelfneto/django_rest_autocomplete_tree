@@ -7,7 +7,7 @@
   </a>
 </p>
 
-**Django REST Autocomplete Tree**: Django app example with autocomplete suggestions based on query.
+**Django REST Autocomplete Tree**: Django app example with autocomplete suggestions based on query.\
 Version: **0.2**
 ***
 
@@ -28,31 +28,23 @@ Version: **0.2**
 | autocomplete  | GET           | List      | /autocomplete/{query} | String            |
 
 ### How run locally:
-1. Clone the repository
+- 1. Clone the repository
 ```shell
 git clone https://github.com/natanaelfneto/django_rest_autocomplete_tree.git
 ```
-2. Create a virtual environment
+- 2. Create a virtual environment, activate it and install project dependencies
 ```shell
 mkvirtualenv autocomplete
-```
-3. Install project dependencies
-```shell
+workon autocomplete
 pip install -r requirements.ext
 ```
-4. Migrate django app
+- 3. Migrate django app, test and run it
 ```shell
 python src/manage.py migrate
-```
-5. Run automated tests on project 'api' application to ensure anything is broken
-```shell
 python src/manage.py tests api
-```
-6. Run the django project application
-```shell
 python src/manage.py runserver
 ```
-7. Access in browser the url http://localhost:8000/autocomplete/<query>
+- 4. Access in browser the url http://localhost:8000/autocomplete/<query>\
 Obs: remember to channge the <query> tag with a string paramenter
 
 ### Example
@@ -61,11 +53,11 @@ Obs: remember to channge the <query> tag with a string paramenter
 curl -X GET -H "Content-Type: application/json" http://localhost:8000/autocomplete/lee
 
 #### Response:
+```json
 HTTP 200 OK
 Allow: OPTIONS, GET
 Content-Type: application/json
 Vary: Accept
-```json
 {
     "patients": [
         "lee chambers",
