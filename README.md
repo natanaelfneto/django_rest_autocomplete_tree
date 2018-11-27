@@ -7,11 +7,11 @@
   </a>
 </p>
 
-**Django REST Autocomplete Tree**: Django app example with autocomplete suggestions based on query.\
+## Django REST Autocomplete Tree
+Django app example with autocomplete suggestions based on query.\
 Version: **0.2**
 ***
 
-## Getting Started
 ### Dependencies:
 - Django==2.1.3
 - django-filter==2.0.0
@@ -28,23 +28,23 @@ Version: **0.2**
 | autocomplete  | GET           | List      | /autocomplete/{query} | String            |
 
 ### How run locally:
-- 1. Clone the repository
+##### Clone the repository
 ```shell
 git clone https://github.com/natanaelfneto/django_rest_autocomplete_tree.git
 ```
-- 2. Create a virtual environment, activate it and install project dependencies
+##### Create a virtual environment, activate it and install project dependencies
 ```shell
 mkvirtualenv autocomplete
 workon autocomplete
 pip install -r requirements.ext
 ```
-- 3. Migrate django app, test and run it
+##### Migrate django app, test and run it
 ```shell
 python src/manage.py migrate
 python src/manage.py tests api
 python src/manage.py runserver
 ```
-- 4. Access in browser the url http://localhost:8000/autocomplete/<query>\
+##### Access in browser the url http://localhost:8000/autocomplete/<query>\
 Obs: remember to channge the <query> tag with a string paramenter
 
 ### Example
