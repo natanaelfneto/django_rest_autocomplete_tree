@@ -44,20 +44,24 @@ python src/manage.py migrate
 python src/manage.py tests api
 python src/manage.py runserver
 ```
-##### Access in browser the url http://localhost:8000/autocomplete/<query>\
+##### Access in browser the url http://localhost:8000/autocomplete/<query>
 Obs: remember to channge the <query> tag with a string paramenter
 
 ### Example
 
 #### Request:
+```Shell
 curl -X GET -H "Content-Type: application/json" http://localhost:8000/autocomplete/lee
+```
 
 #### Response:
-```json
+```ShellSession
 HTTP 200 OK
 Allow: OPTIONS, GET
 Content-Type: application/json
 Vary: Accept
+```
+```json
 {
     "patients": [
         "lee chambers",
