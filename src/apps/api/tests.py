@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 # python imports
-import csv
 import random
 import string
 # django imports
@@ -15,6 +14,7 @@ from .views import *
 # Patient autocomplete api query test class
 class PatientAPITest(APITestCase):
 
+    # basic response for api request
     def response(self, url_name, query):
         """
         DRY procedure for api request and response
@@ -29,22 +29,19 @@ class PatientAPITest(APITestCase):
         # get response from a client request
         return self.client.get(url, format='json')
 
-    
-    # query response value is 200?
-    def test_request_status_value(self):
+
+    # query response value is 200 for random query value?
+    def test_single_request_status_value(self):
         """
         Ensure url get request return OK for an example valid request
-        using single value for all alphabet possible entries.
+        using single value for a single random alphabet possible entries.
         """
 
-        # array with status code for all possible alphabet query entries with single char
-        print('generating status code array')
-        status_code_seq = [
-            self.response('autocomplete', char).status_code for char in string.ascii_letters
-        ]
-    
+        # status code for random alphabet query entries with single char
+        status_code = self.response('autocomplete', random.choice(string.ascii_letters)).status_code
+        
         # assert response status
-        assert all(status_code == status.HTTP_200_OK for status_code in status_code_seq)
+        self.assertEqual(status_code, status.HTTP_200_OK)
 
 
     # query response data is a valid patient object?
