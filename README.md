@@ -44,8 +44,8 @@ python src/manage.py migrate
 python src/manage.py tests api
 python src/manage.py runserver
 ```
-##### Access in browser the url http://localhost:8000/autocomplete/`<query>`
-Obs: remember to channge the `<query>` tag with a string paramenter
+##### Access in browser the url http://localhost:8000/autocomplete/query
+Obs: remember to channge the `query` with a string to receire autocomplete suggestions
 
 ### Example
 
@@ -76,7 +76,7 @@ Vary: Accept
 ```
 
 ### TODOS and possible implementations:
-- API with Django 2 and REST Framework **[OK]**
-- Implementation of automated tests **[OK]**
-- Replace csv object with a database structure **[PENDING]**
-- Replace virtual environment and requirements file with an automatic pyenv dependecies control **[PENDING]**
+- :heavy_check_mark: API with Django 2 and REST Framework **[OK]**
+- :heavy_check_mark: Implementation of automated tests **[OK]**
+- :clock4: Replace csv object with a database structure **[PENDING]**
+- :clock4: Replace virtual environment and requirements file with an automatic pyenv dependecies control **[PENDING]**
