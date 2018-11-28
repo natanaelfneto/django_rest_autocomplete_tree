@@ -13,13 +13,14 @@ Version: **0.2**
 ***
 
 ### Dependencies:
-- Django==2.1.3
-- django-filter==2.0.0
-- djangorestframework==3.9.0
-- Markdown==3.0.1
-- PyTrie==0.3.1
-- pytz==2018.7
-- sortedcontainers==2.1.0
+- Python 3 :snake:
+- Django 2.1.3
+- django-filter 2.0.0
+- djangorestframework 3.9.0
+- Markdown 3.0.1
+- PyTrie 0.3.1
+- pytz 2018.7
+- sortedcontainers 2.1.0
 
 ### API:
 
@@ -28,23 +29,23 @@ Version: **0.2**
 | autocomplete  | GET           | List      | /autocomplete/{query} | String            |
 
 ### How run locally:
-##### Clone the repository
+##### :octocat: Clone the repository
 ```shell
 git clone https://github.com/natanaelfneto/django_rest_autocomplete_tree.git
 ```
-##### Create a virtual environment, activate it and install project dependencies
+##### :thought_balloon: Create a virtual environment, activate it and install project dependencies
 ```shell
 mkvirtualenv autocomplete
 workon autocomplete
 pip install -r requirements.ext
 ```
-##### Migrate django app, test and run it
+##### :chart_with_upwards_trend: Migrate django app, test and run it
 ```shell
 python src/manage.py migrate
 python src/manage.py tests api
 python src/manage.py runserver
 ```
-##### Access in browser the url http://localhost:8000/autocomplete/query
+##### :globe_with_meridians: Access in browser the url http://localhost:8000/autocomplete/query
 Obs: remember to channge the `query` with a string to receire autocomplete suggestions
 
 ### Example
