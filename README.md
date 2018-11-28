@@ -45,7 +45,10 @@ python src/manage.py migrate
 python src/manage.py tests api
 python src/manage.py runserver
 ```
-##### :globe_with_meridians: Access in browser the url http://localhost:8000/autocomplete/query
+##### :globe_with_meridians: Access url in browser:
+- http://localhost:8000/autocomplete/query?format=api for REST Framework API format
+_or_
+- http://localhost:8000/autocomplete/query?format=json for JSON format
 Obs: remember to channge the `query` with a string to receire autocomplete suggestions
 
 ### Example
