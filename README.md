@@ -81,6 +81,7 @@ Vary: Accept
 
 ### TODOS and possible implementations:
 - :heavy_check_mark: API with Django 2 and REST Framework **[OK]**
+- :heavy_check_mark: Django App to return suggestion for patients names based on query as JSON **[OK]**
 - :heavy_check_mark: Implementation of automated tests **[OK]**
 - :clock4: Replace csv object with a database structure **[PENDING]**
 - :clock4: Replace virtual environment and requirements file with an automatic pyenv dependecies control **[PENDING]**
