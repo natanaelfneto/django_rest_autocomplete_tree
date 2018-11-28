@@ -9,7 +9,7 @@
 
 ## Django REST Autocomplete Tree
 Django app example with autocomplete suggestions based on query.\
-Version: **0.2**
+Version: **0.3**
 ***
 
 ### Dependencies:

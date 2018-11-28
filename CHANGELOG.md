@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Released]
 
+### 0.3 2018-11-27
+- Updated readme file
+- Add requirements file
+- Update commnetaries for better review on code
+
 ## [Unreleased]
 
 ### 0.2 2018-11-27
