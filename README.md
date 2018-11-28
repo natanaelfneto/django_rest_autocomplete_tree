@@ -2,7 +2,7 @@
   <a href="#">
     <img 
       alt="autocomplete" 
-      src="https://raw.githubusercontent.com/natanaelfneto/django_rest_autocomplete_tree/master/assets/autocomplete.png"
+      src="https://raw.githubusercontent.com/natanaelfneto/django_rest_autocomplete_tree/master/assets/autocomplete-img.png"
       width="240"/>
   </a>
 </p>
