@@ -33,7 +33,7 @@ Version: **0.2**
 ```shell
 git clone https://github.com/natanaelfneto/django_rest_autocomplete_tree.git
 ```
-##### :thought_balloon: Create a virtual environment, activate it and install project dependencies
+##### :space_invader: Create a virtual environment, activate it and install project dependencies
 ```shell
 mkvirtualenv autocomplete
 workon autocomplete
