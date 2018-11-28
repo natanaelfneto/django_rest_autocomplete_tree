@@ -6,10 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Released]
 
-### 0.3 2018-11-27
+### 0.3 2018-11-28
 - Updated readme file
 - Add requirements file
 - Update commnetaries for better review on code
+- Api app test to assert example request status value splited in single and all values
+- Api app test to assert example request status value for all values commented due to its long runtime
 
 ## [Unreleased]
 
