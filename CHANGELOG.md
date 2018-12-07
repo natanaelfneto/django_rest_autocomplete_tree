@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Released]
 
+### 0.4 2018-12-07
+- Own implemented tree class function with inheritance of python mapping
+- Node object class for tree nodes instancies
+- Null class for not interesting (complete) but true results of autocomplete routine
+- Replaced Pytrie library with own tree solution
+- Removed unecessary migrate command from readme
+
 ### 0.3 2018-11-28
 - Updated readme file
 - Add requirements file
@@ -31,5 +38,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### 0.0 2018-11-27
 - Project folder created
-- Django installed
-- Django REST Framework installed
+- Django implemented
+- Django REST Framework implemented
