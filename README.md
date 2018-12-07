@@ -9,7 +9,7 @@
 
 ## Django REST Autocomplete Tree
 Django app example with autocomplete suggestions based on query.\
-Version: **0.3**
+Version: **0.4**
 ***
 
 ### Dependencies:
@@ -18,9 +18,11 @@ Version: **0.3**
 - django-filter 2.0.0
 - djangorestframework 3.9.0
 - Markdown 3.0.1
-- PyTrie 0.3.1
 - pytz 2018.7
 - sortedcontainers 2.1.0
+
+#### Deprecated dependencies:
+- PyTrie 0.3.1
 
 ### API:
 
@@ -39,9 +41,8 @@ mkvirtualenv autocomplete
 workon autocomplete
 pip install -r requirements.ext
 ```
-##### :chart_with_upwards_trend: Migrate django app, test and run it
+##### :chart_with_upwards_trend: test and run it
 ```shell
-python src/manage.py migrate
 python src/manage.py test api
 python src/manage.py runserver
 ```
@@ -92,3 +93,41 @@ Obs: insted of default random values, run test on all possible values
 - :clock4: Replace csv object with a database structure **[PENDING]**
 - :clock4: Replace virtual environment and requirements file with an automatic pyenv dependecies control **[PENDING]**
 - :clock4: Improve tests for a broadspects sets of values **[PENDING]**
+
+---
+## CHANGELOG
+
+### 0.4 2018-12-07
+- Own implemented tree class function with inheritance of python mapping
+- Node object class for tree nodes instancies
+- Null class for not interesting (complete) but true results of autocomplete routine
+- Replaced Pytrie library with own tree solution
+- Removed unecessary migrate command from readme
+
+### 0.3 2018-11-28
+- Updated readme file
+- Add requirements file
+- Update commnetaries for better review on code
+- Api app test to assert example request status value splited in single and all values
+- Api app test to assert example request status value for all values commented due to its long runtime
+
+## [Unreleased]
+
+### 0.2 2018-11-27
+- Added csv for patient data in ./assets/patient.csv
+- Updated readme file
+
+### 0.1 2018-11-27
+- Django project created
+- Django app created for api
+- Api django app view for patient autocomplete suggestion created
+- Api app class for patients csv data base instance created
+- Api app url created
+- Api app test to assert request status value created
+- Api app test to assert example request data value created
+- Api app test response function to reduce code repetition
+
+### 0.0 2018-11-27
+- Project folder created
+- Django implemented
+- Django REST Framework implemented
