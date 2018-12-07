@@ -111,8 +111,6 @@ Obs: insted of default random values, run test on all possible values
 - Api app test to assert example request status value splited in single and all values
 - Api app test to assert example request status value for all values commented due to its long runtime
 
-## [Unreleased]
-
 ### 0.2 2018-11-27
 - Added csv for patient data in ./assets/patient.csv
 - Updated readme file
